@@ -1,0 +1,26 @@
+<!--
+  Generated template for the Detail page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{person.name.first}} {{person.name.last}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>
+    {{person.name.title}} {{person.name.first}} {{person.name.last}} lives in
+    {{person.location.city}}, {{person.location.state}}.
+  </p>
+
+  <p>
+    You can call them at <a href="tel:{{person.cell}}">{{person.cell}}</a> or
+    <a href="mailto:{{person.email}}">{{person.email}}</a>.
+  </p>
+</ion-content>
